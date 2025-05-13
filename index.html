@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JioSaavn Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  </script>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #121212;
+  color: white;
+  padding-bottom: 100px;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f1f1f;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #2c2c2c;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.search-box i {
+  margin-left: 10px;
+  color: #aaa;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+
+.hero {
+  background: url('https://via.placeholder.com/1200x300') no-repeat center;
+  background-size: cover;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+.trending {
+  padding: 30px 20px;
+}
+
+.trending h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #1f1f1f;
+  padding: 10px;
+  width: calc(25% - 20px);
+  text-align: center;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.card p {
+  margin-top: 10px;
+}
+
+.music-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #181818;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.track-info {
+  display: flex;
+  align-items: center;
+}
+
+.track-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.player-controls i {
+  margin: 0 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+}
+
+.volume input {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+
+  .music-player {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .volume {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: #1f1f1f;
+  padding: 30px 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  color: white;
+  text-align: center;
+}
+
+.modal-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background: #2a2a2a;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+.modal-box .login-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #1db954;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-box .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+<div class="modal-overlay" id="modal">
+  <div class="modal-box">
+    <span class="close-btn" id="close-modal">&times;</span>
+    <h2>Welcome Back</h2>
+    <input type="text" placeholder="Email or Mobile" />
+    <input type="password" placeholder="Password" />
+    <button class="login-btn">Login</button>
+    <p>Don't have an account? <a href="#">Sign up</a></p>
+  </div>
+</div>
+
+
+  <header class="navbar">
+    <div class="logo">JioSaavn</div>
+    <div class="search-box">
+      <input type="text" placeholder="Search" />
+      <i class="fas fa-search"></i>
+    </div>
+    <nav class="nav-links">
+      <a href="#">Sign In</a>
+      <a href="#">Go Pro</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to JioSaavn</h1>
+      <p>Your music, your mood, anytime</p>
+    </div>
+  </section>
+
+  <section class="trending">
+    <h2>Trending Now</h2>
+    <div class="card-grid">
+      <div class="card"><img src="https://via.placeholder.com/150" alt=""><p>Album 1</p></div>
+      <div class="card"><img src="https://via.placeholder.com/150" alt=""><p>Album 2</p></div>
+      <div class="card"><img src="https://via.placeholder.com/150" alt=""><p>Album 3</p></div>
+      <div class="card"><img src="https://via.placeholder.com/150" alt=""><p>Album 4</p></div>
+    </div>
+  </section>
+
+
+  <footer class="music-player">
+    <div class="track-info">
+      <img src="https://via.placeholder.com/50" alt="">
+      <div>
+        <h4>Track Name</h4>
+        <p>Artist</p>
+      </div>
+    </div>
+    <div class="player-controls">
+      <i class="fas fa-backward"></i>
+      <i class="fas fa-play"></i>
+      <i class="fas fa-forward"></i>
+    </div>
+    <div class="volume">
+      <i class="fas fa-volume-up"></i>
+      <input type="range" min="0" max="100" />
+    </div>
+  </footer>
+
+</body>
+</html>
