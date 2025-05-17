@@ -269,11 +269,10 @@
     }
 
     .player-controls {
+      margin-right: 120px;
       display: flex;
       align-items: center;
       gap: 24px;
-      background: #f2f2f2;
-
       padding: 12px 20px;
       border-radius: 10px;
     }
@@ -316,12 +315,18 @@
 
       .player-controls {
         gap: 10px;
+        margin-right: 0;
+      }
+
+      a {
+        display: none;
       }
     }
   </style>
 </head>
 
 <body>
+
   <header class="topbar">
     <div class="logo">JioSaavn</div>
     <nav>
@@ -363,69 +368,74 @@
     <main class="main-content">
       <h2>Trending Now</h2>
       <div class="album-grid">
-        <div class="album">
+
+        <div class="album"
+          data-song="song/Sanam Teri Kasam_ (Lyrical Video) - Harshvardhan_ Mawra _ Ankit Tiwari _ Palak M _ Himesh Reshammiya(MP3_160K).mp3"
+          data-title="Sanam Teri Kasam"
+          data-img="img/Sanam-Teri-Kasam-Original-Motion-Picture-Soundtrack-Hindi-2016-20250509095734-500x500.jpg">
           <img src="img/Sanam-Teri-Kasam-Original-Motion-Picture-Soundtrack-Hindi-2016-20250509095734-500x500.jpg" />
           <p>Sanam Teri Kasam</p>
         </div>
-        <div class="album">
+        <div class="album"
+         data-song="song/Banjaara Full Video Song _ Ek Villain _ Shraddha Kapoor_ Siddharth Malhotra(MP3_160K).mp3"> 
           <img src="img/Ek-Villain-Hindi-2014-500x500.jpg" />
           <p>Ek Villain</p>
         </div>
-        <div class="album">
+        <div class="album" data-song="song/Ishq Hai (Official Music Video) _ Mismatched Season 3 _ A Netflix Series _ Anurag Saikia(MP3_160K).mp3">
           <img src="img/Mismatched-Season-3-Soundtrack-from-the-Netflix-Series-Hindi-2024-20241217204803-500x500.jpg" />
           <p>Mismatched</p>
         </div>
-        <div class="album">
+        <div class="album"          data-song="song/LAAL PARI (Song)_ Yo Yo Honey Singh _ Sajid Nadiadwala _ Tarun Mansukhani _ Housefull 5 - 6th June(MP3_160K).mp3">
           <img src="img/Laal-Pari-From-Housefull-5-Hindi-2025-20250512121009-500x500.jpg" />
           <p>Laal Pari</p>
         </div>
 
-        <div class="album">
+        <div class="album" data-song="song/Pushpa Pushpa (Film Version) Hindi _ Allu Arjun _ Pushpa 2 the Rule _ Rashmika _ Sukumar _ Fahaad F(MP3_160K).mp3">
           <img src="img/Pushpa-2-The-Rule-Hindi-2024-20241205211002-500x500.jpg" />
           <p>Pushpa-2</p>
         </div>
-        <div class="album">
+        <div class="album"  data-song="song/Aaya Re Toofan - Lyric Video _ Chhaava_ Vicky K_ Rashmika M _A. R. Rahman_Vaishali S(MP3_160K).mp3">
           <img src="img/Chhaava-Hindi-2025-20250213193448-500x500.jpg" />
           <p>Chhaava</p>
         </div>
-        <div class="album">
-          <img src="img/BestOfR_BHindi_20250212110408.jpg" />
-          <p>Best Of Hindi</p>
+        <div class="album" data-song="song/Kehna Ghalat Ghalat to Chhupana Sahi Sahi(MP3_160K).mp3">
+          <img src="img/OIP.jpeg" />
+          <p>nusrat fateh ali khan</p>
         </div>
-        <div class="album">
+        <div class="album" data-song="song/Uyi Amma - Azaad _ Aaman D_ Rasha Thadani_ Madhubanti Bagchi_Amit Trivedi_Amitabh_ Bosco_ Abhishek K(MP3_160K).mp3"data-song="song/Uyi Amma - Azaad _ Aaman D_ Rasha Thadani_ Madhubanti Bagchi_Amit Trivedi_Amitabh_ Bosco_ Abhishek K(MP3_160K).mp3">
           <img src="img/Azaad-Hindi-2025-20250111205422-500x500.jpg" />
           <p>Azaad</p>
         </div>
-        <div class="album">
+        <div class="album" data-song="song/Full Video_ Raanjhan _ Do Patti _ Kriti Sanon_ Shaheer Sheikh _ Parampara Tandon _ Sachet-Parampara(MP3_160K).mp3">
           <img src="img/Do-Patti-Hindi-2024-20250509181115-500x500.jpg" />
           <p>Do Patt</p>
         </div>
-        <div class="album">
+        <div class="album" data-song="song/Ve Kamleya _ Rocky Aur Rani Kii Prem Kahaani _ Ranveer _ Alia _ Pritam _ Amitabh _ Arijit _ Shreya(MP3_160K).mp3">
           <img src="img/Rocky-Aur-Rani-Kii-Prem-Kahaani-Hindi-2023-20250130073112-500x500.jpg" />
           <p>Rocky Aur Rani</p>
         </div>
-        <div class="album">
+        <div class="album" data-song="song/O Shera-Teer Te Taj - Full Song _ Kesari 2 _ Akshay Kumar_ R. Madhavan_ Ananya P _ Sangtar_ Shashwat(MP3_160K).mp3">
           <img src="img/Kesari-Chapter-2-Original-Motion-Picture-Soundtrack-Hindi-2025-20250421111144-500x500.jpg" />
           <p>Kesari Chapter 2</p>
         </div>
-        <div class="album">
+        <div class="album" data-song="song/Tanishk Bagchi_ Gifty_ Harnoor_ Shreya Ghoshal - Koi Naa (Lyric Video)(MP3_160K).mp3">
           <img src="img/Koi-Naa-From-Bhool-Chuk-Maaf-Hindi-2025-20250416112929-500x500.jpg" />
           <p>Koi Naa</p>
         </div>
 
-        <div class="album">
-          <img src="img/Let_sPlayLuckyAli_20240531070217.jpg" />
-          <p>Lets Play Lucky Ali</p>
+        <div class="album" data-song="song/MILLIONAIRE SONG (Full Video)_ _YoYoHoneySingh  _ GLORY _ BHUSHAN KUMAR(MP3_160K).mp3">
+          <img src="img/OIP (1).jpeg" />
+          <p>MILLIONAIRE SONG</p>
         </div>
-        <div class="album">
+        <div class="album" data-song="song/RAID 2_ NASHA (Song) _ Tamannaah B_ Ajay D_ Riteish D _ Jasmine Sandlas_ Sachet T_ Jaani _ Bhushan K(MP3_160K).mp3">
           <img src="img/Raid-2-Hindi-2025-20250429161057-500x500.jpg" />
           <p>Raid 2</p>
         </div>
-        <div class="album">
-          <img src="img/IndipopSadSongs_20240726114416.jpg" />
-          <p>IndipopSadSongs</p>
+        <div class="album" data-song="song/Bella Ciao Full Song _ La Casa De Papel _ Money Heist _ Netflix India(MP3_160K).mp3">
+          <img src="img/MONEY-HEIST-SEASON-5.avif" />
+          <p>Bella Ciao</p>
         </div>
-        <div class="album">
+        <div class="album" data-song="song/Zohra Jabeen _ Sikandar _ Salman Khan_ Rashmika_ Pritam_Nakash_ Dev_ Mellow D_ Sajid N_AR Murugadoss(MP3_160K).mp3">
           <img src="img/Sikandar-Hindi-2025-20250410091041-500x500.jpg" />
           <p>Sikandar</p>
         </div>
@@ -443,47 +453,48 @@
 
   <footer class="music-player">
     <div class="track-info">
-      <img src="img/Laal-Pari-From-Housefull-5-Hindi-2025-20250512121009-500x500.jpg" alt="Track" />
+      <img src="img/Sanam-Teri-Kasam-Original-Motion-Picture-Soundtrack-Hindi-2016-20250509095734-500x500.jpg"
+        alt="Track" />
       <div>
-        <p class="track-title">Laal Pari (From "Housefull 5")</p>
+        <p class="track-title">Sanam Teri Kasam</p>
         <p class="track-artist">Yo Yo Honey Singh, Alfaaz, Simar Kaur</p>
       </div>
     </div>
-<div class="player-controls">
-
-  <button class="control-btn" onclick="seek(-10)">
-    <svg viewBox="0 0 24 24" fill="none" width="24" height="24">
-      <path d="M6 4v16" stroke="currentColor" stroke-width="2" />
-      <path d="M18 5l-10 7 10 7V5z" fill="currentColor" />
-    </svg>
-  </button>
-
-  
-  <button class="control-btn" onclick="togglePlay()" id="playBtn">
-    <svg id="playIcon" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
- 
-      <path d="M8 5v14l11-7z" />
-    </svg>
-  </button>
 
 
-  <button class="control-btn" onclick="seek(10)">
-    <svg viewBox="0 0 24 24" fill="none" width="24" height="24">
-      <path d="M18 4v16" stroke="currentColor" stroke-width="2" />
-      <path d="M6 5l10 7-10 7V5z" fill="currentColor" />
-    </svg>
-  </button>
-</div>
+    <div class="player-controls">
+
+      <button class="control-btn" onclick="prevSong()">
+        <svg viewBox="0 0 24 24" fill="none" width="24" height="24">
+          <path d="M6 4v16" stroke="currentColor" stroke-width="2" />
+          <path d="M18 5l-10 7 10 7V5z" fill="currentColor" />
+        </svg>
+      </button>
 
 
- 
-<div class="controls">
-  <span id="time">0:00 / 0:00</span>
-  <input type="range" class="volume-bar" min="0" max="1" step="0.01" onchange="setVolume(this.value)" />
-  <span>🔊</span>
-</div>
+      <button class="control-btn" onclick="togglePlay()" id="playBtn">
+        <svg id="playIcon" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+      </button>
 
-    <audio id="audioPlayer" src="song/LAAL PARI (Song)_ Yo Yo Honey Singh _ Sajid Nadiadwala _ Tarun Mansukhani _ Housefull 5 - 6th June(MP3_160K).mp3"></audio>
+
+      <button class="control-btn" onclick="nextSong()">
+        <svg viewBox="0 0 24 24" fill="none" width="24" height="24">
+          <path d="M18 4v16" stroke="currentColor" stroke-width="2" />
+          <path d="M6 5l10 7-10 7V5z" fill="currentColor" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="controls">
+      <span id="time">0:00 / 0:00</span>
+      <input type="range" class="volume-bar" min="0" max="1" step="0.01" onchange="setVolume(this.value)" />
+      <span>🔊</span>
+    </div>
+
+    <audio id="audioPlayer"
+      src="song/Sanam Teri Kasam_ (Lyrical Video) - Harshvardhan_ Mawra _ Ankit Tiwari _ Palak M _ Himesh Reshammiya(MP3_160K).mp3"></audio>
   </footer>
 
   <div class="modal" id="loginModal">
@@ -504,61 +515,128 @@
       <button>Sign Up</button>
     </div>
   </div>
-<script>
-  const audio = document.getElementById('audioPlayer');
-  const playIcon = document.getElementById('playIcon');
-  const timeDisplay = document.getElementById('time');
 
+  <script>
+    const albums = document.querySelectorAll(".album");
+    const playBtn = document.getElementById("playBtn");
+    const playIcon = document.getElementById("playIcon");
+    const audio = new Audio();
+    const trackTitleEl = document.querySelector(".track-title");
+    const trackArtistEl = document.querySelector(".track-artist");
+    const trackImgEl = document.querySelector(".track-info img");
+    const queuePlayBtn = document.querySelector(".queue-play-btn");
+    const timeDisplay = document.getElementById("time");
+    let currentSongIndex = -1;
+    let isPlaying = false;
 
-  function togglePlay() {
-    if (audio.paused) {
-      audio.play();
-      playIcon.innerHTML = `<path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />`; // Pause icon
-    } else {
-      audio.pause();
-      playIcon.innerHTML = `<path d="M8 5v14l11-7z" />`; 
-    }
-  }
-
-
-  function seek(seconds) {
-    audio.currentTime += seconds;
-  }
-
-  function setVolume(vol) {
-    audio.volume = vol;
-  }
-
-  function formatTime(seconds) {
-    const minutes = Math.floor(seconds / 60);
-    const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
-    return `${minutes}:${secs}`;
-  }
-
-
-  audio.addEventListener('timeupdate', () => {
-    const current = formatTime(audio.currentTime);
-    const duration = formatTime(audio.duration || 0);
-    timeDisplay.textContent = `${current} / ${duration}`;
-  });
-
-
-  audio.addEventListener('loadedmetadata', () => {
-    const duration = formatTime(audio.duration);
-    timeDisplay.textContent = `0:00 / ${duration}`;
-  });
-
-  function openModal(type) {
-    document.getElementById(type + 'Modal').style.display = 'flex';
-  }
-
-  window.addEventListener('click', function (e) {
-    ['loginModal', 'signupModal'].forEach(id => {
-      const modal = document.getElementById(id);
-      if (e.target === modal) modal.style.display = 'none';
+    const songs = Array.from(albums).map((album, index) => {
+      return {
+        title: album.getAttribute("data-title") || album.querySelector("p")?.textContent || "Unknown",
+        artist: "Unknown Artist",
+        img: album.getAttribute("data-img") || album.querySelector("img")?.src || "",
+        song: album.getAttribute("data-song") || "",
+        index,
+      };
     });
-  });
-</script>
+
+    function loadSong(index) {
+      if (index < 0 || index >= songs.length) return;
+
+      const song = songs[index];
+      audio.src = song.song;
+      trackTitleEl.textContent = song.title;
+      trackArtistEl.textContent = song.artist;
+      trackImgEl.src = song.img;
+
+      currentSongIndex = index;
+    }
+
+    function playSong() {
+      audio.play();
+      isPlaying = true;
+      playIcon.innerHTML = '<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>';
+      queuePlayBtn.textContent = "⏸";
+    }
+
+    function pauseSong() {
+      audio.pause();
+      isPlaying = false;
+      playIcon.innerHTML = '<path d="M8 5v14l11-7z"/>';
+      queuePlayBtn.textContent = "▶";
+    }
+
+    function togglePlay() {
+      if (isPlaying) {
+        pauseSong();
+      } else {
+        if (currentSongIndex === -1) {
+          loadSong(0);
+        }
+        playSong();
+      }
+    }
+
+    function prevSong() {
+      if (currentSongIndex === -1) return;
+      let newIndex = currentSongIndex - 1;
+      if (newIndex < 0) newIndex = songs.length - 1;
+      loadSong(newIndex);
+      playSong();
+    }
+
+    function nextSong() {
+      if (currentSongIndex === -1) return;
+      let newIndex = currentSongIndex + 1;
+      if (newIndex >= songs.length) newIndex = 0;
+      loadSong(newIndex);
+      playSong();
+    }
+
+    albums.forEach((album, i) => {
+      album.addEventListener("click", () => {
+        loadSong(i);
+        playSong();
+      });
+    });
+
+    queuePlayBtn.addEventListener("click", togglePlay);
+
+    audio.addEventListener("ended", () => {
+      nextSong();
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const current = formatTime(audio.currentTime);
+      const duration = formatTime(audio.duration || 0);
+      timeDisplay.textContent = `${current} / ${duration}`;
+    });
+
+    audio.addEventListener('loadedmetadata', () => {
+      const duration = formatTime(audio.duration || 0);
+      timeDisplay.textContent = `0:00 / ${duration}`;
+    });
+
+    function formatTime(seconds) {
+      const mins = Math.floor(seconds / 60);
+      const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
+      return `${mins}:${secs}`;
+    }
+
+    function setVolume(vol) {
+      audio.volume = vol;
+    }
+
+    function openModal(type) {
+      document.getElementById(type + 'Modal').style.display = 'flex';
+    }
+
+    window.addEventListener('click', function (e) {
+      ['loginModal', 'signupModal'].forEach(id => {
+        const modal = document.getElementById(id);
+        if (e.target === modal) modal.style.display = 'none';
+      });
+    });
+  </script>
 
 </body>
 
